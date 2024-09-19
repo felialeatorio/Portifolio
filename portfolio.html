@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portfólio de FelipeFGarbim, desenvolvedor de software especializado em PHP, 
+        JavaScript, Laravel e Tailwind CSS. Veja projetos e habilidades na criação de soluções web e mobile.">
+    <meta name="keywords" content="Desenvolvedor de Software, PHP, JavaScript, Laravel, Tailwind CSS, Flutter, SEO, Desenvolvimento Web, Desenvolvimento Mobile">
+    <meta name="author" content="Felipe F Garbim">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Portfólio de FelipeFGarbim">
+    <meta property="og:description" content="Veja meus projetos e habilidades como desenvolvedor de software especializado em PHP, JavaScript, e muito mais.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="URL do seu portfólio">
+    <meta property="og:type" content="website">
+    
+    <title>Portfolio - Felipe F Garbim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Fundo com detalhes para dar mais vida à página */
+        body {
+            background-color: #000;
+            background-image: radial-gradient(circle, rgba(0, 255, 0, 0.1) 1%, rgba(0, 0, 0, 1) 50%);
+            background-size: cover;
+            background-attachment: fixed;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Estilo para o destaque em verde neon */
+        .highlight {
+            color: #00ff00;
+        }
+
+        /* Animação para aparição suave */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Animação de hover nos projetos */
+        .project:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .verde{
+            background-color:#558C03
+        }
+        .verde:hover{
+            background-color:#74BF04
+        }
+        /* Efeito de rotação no botão */
+    </style>
+</head>
+
+<body class="font-sans text-white">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6 sticky top-0 bg-black bg-opacity-80 backdrop-blur-md z-10">
+        <h1 class="text-3xl font-bold highlight">Felipe F Garbim</h1>
+        <ul class="flex space-x-8 text-lg">
+            <li><a href="#skills" class="hover:text-green-400 nav-link">Habilidades</a></li>
+            <li><a href="#projects" class="hover:text-green-400 nav-link">Projetos</a></li>
+            <li><a href="#about" class="hover:text-green-400 nav-link">Sobre</a></li>
+            <li><a href="#contact" class="hover:text-green-400 nav-link">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex flex-col justify-center items-center text-center">
+        <h2 class="text-4xl md:text-6xl font-bold mb-4 highlight animate-bounce">Desenvolvedor Full Stack</h2>
+        <p class="text-xl highlight opacity-75">PHP | JavaScript | Tailwind CSS | MySQL | APIs</p>
+        <a href="#projects"
+            class="mt-6 verde text-black font-bold py-3 px-6 rounded-lg  project">Veja Meus
+            Projetos</a>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-8 md:px-16">
+        <h3 class="text-3xl font-bold mb-6 highlight">Habilidades</h3>
+        <ul class="list-disc pl-5 space-y-2 opacity-90">
+            <li>PHP & Laravel</li>
+            <li>JavaScript & jQuery</li>
+            <li>TailwindCSS & BootStrap</li>
+            <li>MySQL & Bancos de Dados NoSQL</li>
+            <li>APIs RESTful</li>
+            <li>SEO & Otimização de Conversão</li>
+            <li>Flutter & FlutterFlow</li>
+        </ul>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 px-8 md:px-16 bg-gray-900">
+        <h3 class="text-3xl font-bold mb-6 highlight">Projetos</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <!-- Projeto 1 -->
+
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg project">
+                <img src="projeto-estoque.jpg" alt="Sistema de Estoque"
+                    class="w-full h-64 object-cover mb-4 rounded-lg">
+                <h4 class="text-xl font-bold mb-4">Sistema de Gerenciamento de Estoque</h4>
+                <p>
+                    Como meu primeiro projeto desenvolvi um <b>sistema de gerenciamento de estoque</b> escalável
+                    utilizado por mais de 200 lojas para
+                    monitorar e controlar seus inventários em tempo real. O sistema foi projetado para lidar com grandes
+                    volumes de dados, oferecendo uma interface de fácil navegação e relatórios precisos para gerentes e
+                    operadores.
+                </p>
+                <p>
+                    No back-end, utilizei <b>PHP</b> e <b>MySQL</b> para a estruturação do banco de dados, com foco em
+                    consultas otimizadas que garantissem a velocidade de resposta, mesmo com altas demandas de usuários
+                    simultâneos. O front-end foi construído com <b>JavaScript</b> e <b>jQuery</b>, assegurando que as
+                    interações fossem rápidas e fluidas, com atualizações dinâmicas via <b>AJAX</b>.
+                </p>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg project">
+                <img src="projeto-ead.jpg" alt="Projeto EAD" class="w-full h-64 object-cover mb-4 rounded-lg">
+                <h4 class="text-xl font-bold mb-4">Plataforma EAD</h4>
+                <p>
+                    Desenvolvi uma <b>plataforma de ensino a distância (EAD)</b> completa, utilizada por mais de 1.200
+                    alunos e educadores. A plataforma foi construída para oferecer uma experiência educacional robusta e
+                    flexível, permitindo o cadastro e gestão de cursos, materiais didáticos, e fóruns de discussão.
+                </p>
+                <p>
+                    Atuei no desenvolvimento tanto do back-end, utilizando <b>PHP</b> e o framework <b>Laravel</b> para
+                    a
+                    criação de <b>APIs RESTful</b>, quanto no front-end com <b>Tailwind CSS</b> para garantir uma
+                    interface
+                    intuitiva e responsiva. A plataforma inclui recursos de autenticação, controle de acesso baseado em
+                    perfis, geração de relatórios dinâmicos, e integração com APIs de pagamento para matrículas.
+                </p>
+            </div>
+            <!-- Projeto 3 (Novo) -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg project">
+                <img src="projeto-coreano.png" alt="site Coreano ao vivo"
+                    class="w-full h-64 object-cover mb-4 rounded-lg">
+                <h4 class="text-xl font-bold mb-4">Site de curso de Coreano</h4>
+                <p>
+                    Desenvolvi o site da <a style='color:aqua'href="https://www.coreanoaovivo.com.br/index.html"><b>Coreano Ao Vivo</b></a> para uma escola de idiomas,
+                    projetado para fornecer informações
+                    sobre cursos, professores e inscrições. O site inclui páginas para detalhes dos cursos, um
+                    formulário de contato, informações dos professores e uma seção de FAQs. O objetivo principal era
+                    criar uma presença online clara
+                    e acessível para os alunos interessados em aprender mais sobre as ofertas da escola.
+                </p>
+
+                <p>
+                    O site foi desenvolvido utilizando <b>PHP</b> para a criação do back-end e <b>JavaScript</b> para
+                    melhorar a interatividade do front-end. A interface foi construída com <b>BootStrap</b> para
+                    garantir que o design fosse responsivo e atraente em dispositivos móveis e desktops. A solução final
+                    proporcionou uma navegação intuitiva e facilitou o acesso a informações para interressados no curso.
+                </p>
+
+            </div>
+
+            <!-- Projeto 4 (Novo) -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-lg project">
+                <img src="projeto-app.png" alt="Aplicativo Mobile de Tarefas"
+                    class="w-full h-64 object-cover mb-4 rounded-lg">
+                <h4 class="text-xl font-bold mb-4">Aplicativo Mobile de Tarefas e Notificações</h4>
+                <p>
+                    Estou Desenvolvendo um <b>aplicativo mobile de gerenciamento de tarefas e notificações</b> usando
+                    <b>Flutterflow</b>. O app permite que os
+                    usuários criem listas de tarefas, estabeleçam prioridades, e recebam notificações para prazos
+                    importantes.
+                </p>
+                <p>
+                    O aplicativo está sendo projetado com foco em usabilidade, oferecendo uma experiência de usuário
+                    fluida em
+                    dispositivos Android e iOS. A integração com serviços de nuvem também permite sincronização em tempo
+                    real das tarefas entre diferentes dispositivos, o projeto esta em desenolvimento ainda.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-8 md:px-16">
+        <h3 class="text-3xl font-bold mb-6 highlight">Sobre Mim</h3>
+        <p class="text-lg leading-loose">
+            Sou um desenvolvedor de software com mais de 3 anos de experiência no desenvolvimento de soluções web e
+            mobile. Minha especialidade é trabalhar com tecnologias modernas para criar aplicações escaláveis e de alta
+            performance que atendam às necessidades de negócios em diversos setores. Tenho ampla experiência no
+            desenvolvimento full stack, utilizando <b>PHP</b> e <b>Laravel</b> no back-end para criar APIs robustas e
+            arquiteturas <b>MVC</b>, além de <b>JavaScript</b> no front-end para construir interfaces dinâmicas e
+            responsivas.
+        </p>
+
+        <p class="text-lg leading-loose mt-4">
+            Além disso, sou adepto de boas práticas de desenvolvimento, como <b>programação orientada a objetos
+                (POO)</b>,
+            testes automatizados e <b>integração contínua (CI/CD)</b>. Essas práticas garantem que o código seja limpo,
+            escalável e fácil de manter. Também tenho experiência com <b>SEO</b> e <b>otimização de UX</b>, o que me
+            permite
+            criar aplicações não apenas funcionais, mas também voltadas para melhorar a conversão e a experiência do
+            usuário final.
+        </p>
+
+        <p class="text-lg leading-loose mt-4">
+            Nos últimos anos, expandi minhas habilidades para o desenvolvimento mobile com <b>Flutter</b> e
+            <b>FlutterFlow</b>, permitindo que eu criasse aplicativos móveis que proporcionam uma experiência de usuário
+            fluida e consistente em diferentes dispositivos.
+        </p>
+
+        <p class="text-lg leading-loose mt-4">
+            Minha abordagem ao desenvolvimento é sempre focada em resolver problemas complexos de maneira eficiente e
+            criar soluções que sejam flexíveis o suficiente para acompanhar o crescimento do negócio. Trabalhando em
+            equipe, gosto de compartilhar conhecimento e colaborar para encontrar as melhores soluções técnicas e
+            estratégias de produto. Com uma mentalidade ágil, estou sempre em busca de aprimorar processos e adotar
+            novas ferramentas que possam acelerar o desenvolvimento sem comprometer a qualidade.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-8 md:px-16 bg-gray-900">
+        <h3 class="text-3xl font-bold mb-6 highlight">Contato</h3>
+        <form id="contact-form" class="space-y-4">
+            <input type="text" placeholder="Nome" class="w-full p-3 rounded-lg bg-gray-800 text-white" required>
+            <input type="email" placeholder="Email" class="w-full p-3 rounded-lg bg-gray-800 text-white" required>
+            <textarea placeholder="Sua mensagem..." class="w-full p-3 rounded-lg bg-gray-800 text-white" rows="5"
+                required></textarea>
+            <button type="submit"
+                class="w-full p-3 rounded-lg verde text-black font-bold ">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 bg-black text-gray-400">
+        <p>&copy; 2024 FelipeFGarbim. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // Função para rolagem suave ao clicar nos links do menu
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
+        });
+
+        // JavaScript para submissão do formulário
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            alert('Mensagem enviada com sucesso!');
+        });
+    </script>
+</body>
+
+</html>
